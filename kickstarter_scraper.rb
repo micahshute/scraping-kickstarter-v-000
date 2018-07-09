@@ -16,4 +16,3 @@ def create_project_hash
   end
   project_hash
 end
-
