@@ -9,6 +9,7 @@ def create_project_hash
   thumbnail = projects.first.css("div.project-thumbnail a img").attribute("src").value
   info = projects.first.css("p.bbcard_blurb").text
   location = projects.first.css("ul.project-meta li a span.location-name").text
+  per_funded = projects.first.css("ul.project-stats li.first.funded strong").text
   binding.pry
 end
 
