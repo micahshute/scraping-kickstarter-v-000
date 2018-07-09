@@ -8,6 +8,7 @@ def create_project_hash
   title = projects.first.css("h2.bbcard_name strong a").text
   thumbnail = projects.first.css("div.project-thumbnail a img").attribute("src").value
   info = projects.first.css("p.bbcard_blurb").text
+  location = projects.first.css("a.data-location").attribute("displayable_name").value
   binding.pry
 end
 
